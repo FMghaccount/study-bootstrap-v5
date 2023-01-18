@@ -11,13 +11,13 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Vazir', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 html,
 body {
-  direction: rtl;
+  /* direction: rtl; */
   padding: 0;
   margin: 0;
-  font-family: -apple-system, 'Vazir', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
