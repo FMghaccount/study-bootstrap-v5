@@ -18,7 +18,177 @@
     </header>
     <main>
       <div class="container mt-5 mb-5">
-        <div class="row mb-5">
+        <div class="row mb-5 border p-3">
+          <h2>Basic Table</h2>
+          <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row mb-5 border p-3">
+          <h2>Striped Rows</h2>
+          <p>The .table-striped class adds zebra-stripes to a table:</p>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row mb-5 border p-3">
+          <h2>Bordered Table</h2>
+          <p>The .table-bordered class adds borders on all sides of the table and the cells:</p>
+          <table class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr class="table-primary">
+                <td>Primary</td>
+                <td>Joe</td>
+                <td>joe@example.com</td>
+              </tr>
+              <tr class="table-success">
+                <td>Success</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr class="table-danger">
+                <td>Danger</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+              </tr>
+              <tr class="table-info">
+                <td>Info</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+              </tr>
+              <tr class="table-warning">
+                <td>Warning</td>
+                <td>Refs</td>
+                <td>bo@example.com</td>
+              </tr>
+              <tr class="table-active">
+                <td>Active</td>
+                <td>Activeson</td>
+                <td>act@example.com</td>
+              </tr>
+              <tr class="table-secondary">
+                <td>Secondary</td>
+                <td>Secondson</td>
+                <td>sec@example.com</td>
+              </tr>
+              <tr class="table-light">
+                <td>Light</td>
+                <td>Angie</td>
+                <td>angie@example.com</td>
+              </tr>
+              <tr class="table-dark">
+                <td>Dark</td>
+                <td>Bo</td>
+                <td>bo@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row mb-5 border p-3">
+          <h2>Responsive Table</h2>
+          <p>The .table-responsive-sm class creates a responsive table which will scroll horizontally on screens that
+            are less than 576px wide.</p>
+          <p>Resize the browser window to see the effect.</p>
+          <div class="table-responsive-sm">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Age</th>
+                  <th>City</th>
+                  <th>Country</th>
+                  <th>Sex</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Anna</td>
+                  <td>Pitt</td>
+                  <td>35</td>
+                  <td>New York</td>
+                  <td>USA</td>
+                  <td>Female</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="row mb-5 border p-3">
           <div class="col alert alert-success alert-dismissible fade show">
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
             <strong>Success!</strong> This alert box could indicate a successful or positive action.
@@ -99,27 +269,27 @@
           </div>
           <div class="col-12 border p-3 mb-4">
             <!-- Blue -->
-            <div class="progress">
+            <div class="progress mb-3">
               <div class="progress-bar" style="width:10%"></div>
             </div>
 
             <!-- Green -->
-            <div class="progress">
+            <div class="progress mb-3">
               <div class="progress-bar bg-success" style="width:20%"></div>
             </div>
 
             <!-- Turquoise -->
-            <div class="progress">
+            <div class="progress mb-3">
               <div class="progress-bar bg-info" style="width:30%"></div>
             </div>
 
             <!-- Orange -->
-            <div class="progress">
+            <div class="progress mb-3">
               <div class="progress-bar bg-warning" style="width:40%"></div>
             </div>
 
             <!-- Red -->
-            <div class="progress">
+            <div class="progress mb-3">
               <div class="progress-bar bg-danger" style="width:50%"></div>
             </div>
           </div>
@@ -159,7 +329,7 @@
           </div>
         </div>
       </div>
-      <div class="container mt-5 mb-5 border">
+      <div class="container mt-5 mb-5 border pt-3 pb-3">
         <h2>Pagination</h2>
         <p>Use utility classes to change the alignment of the pagination:</p>
         <ul class="pagination">
@@ -181,7 +351,7 @@
           <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
         </ul>
       </div>
-      <div class="container mt-5 mb-5 border">
+      <div class="container mt-5 mb-5 border pt-3 pb-3">
         <h2>Breadcrumbs</h2>
         <p>The .breadcrumb class indicates the current page's location within a navigational hierarchy:</p>
         <ul class="breadcrumb">
@@ -190,6 +360,42 @@
           <li class="breadcrumb-item"><a href="#">Italy</a></li>
           <li class="breadcrumb-item active">Rome</li>
         </ul>
+      </div>
+      <div class="container mt-5 mb-5 border pt-3 pb-3">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">First item</a>
+          <a href="#" class="list-group-item list-group-item-action active">Second item</a>
+          <a href="#" class="list-group-item disabled">Third item</a>
+          <a href="#" class="list-group-item list-group-item-action">Fourth item</a>
+        </div>
+      </div>
+      <div class="container mt-5 mb-5 border pt-3 pb-3">
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item">First item</li>
+          <li class="list-group-item">Second item</li>
+          <li class="list-group-item">Third item</li>
+          <li class="list-group-item">Fourth item</li>
+        </ul>
+      </div>
+      <div class="container mt-5 mb-5 border pt-3 pb-3">
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">First item</li>
+          <li class="list-group-item">Second item</li>
+          <li class="list-group-item">Third item</li>
+        </ol>
+      </div>
+      <div class="container mt-5 mb-5 border pt-3 pb-3">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action">Action item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-success">Success item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Secondary item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-info">Info item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Warning item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Danger item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Primary item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Dark item</a>
+          <a href="#" class="list-group-item list-group-item-action list-group-item-light">Light item</a>
+        </div>
       </div>
     </main>
     <footer>
