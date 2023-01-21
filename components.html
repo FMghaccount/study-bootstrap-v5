@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Title</title>
+    <title>Bootstrap</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -847,29 +847,289 @@
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
           Open modal
         </button>
+
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+          <div class="modal-dialog modal-fullscreen-md-down">
+            <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Modal Heading</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <!-- Modal body -->
+              <div class="modal-body">
+                Modal body..
+              </div>
+
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="container mt-5 mb-4 border pt-3 pb-3">
+        <h3>Tooltip Positioning</h3>
+        <p>The data-bs-placement attribute specifies the tooltip position.</p>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!">Top</a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hooray!">Bottom</a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Hooray!">Left</a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Hooray!">Right</a>
+      </div>
+      <div class="container mt-5 mb-4 border pt-3 pb-3">
+        <h3>Popover Positioning</h3>
+        <p>Click on the links to see the popover in action:</p>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Content">Top</a>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="bottom"
+          data-bs-content="Content">Bottom</a>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Content">Left</a>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="right"
+          data-bs-content="Content">Right</a>
+        <h3 id="Dismissible-Popover">Dismissible Popover</h3>
 
-      <!-- The Modal -->
-      <div class="modal fade" id="myModal">
-        <div class="modal-dialog modal-fullscreen-md-down">
-          <div class="modal-content">
+        <a href="#" title="Dismissible popover" data-bs-toggle="popover" data-bs-trigger="focus"
+          data-bs-content="Click anywhere in the document to close this popover">Click me</a>
+        <h3>Hoverable Popover</h3>
 
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Modal Heading</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <a href="#" title="Header" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Popover text">Hover
+          over me</a>
+      </div>
+      <div class="container mt-5 mb-4 border pt-3 pb-3">
+        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading1">First</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading2">Second</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+          data-bs-smooth-scroll="true" style="height: 200px;overflow-y: auto;"
+          class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+          <h4 id="scrollspyHeading1">First heading</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+            appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+            some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h4 id="scrollspyHeading2">Second heading</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+            appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+            some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h4 id="scrollspyHeading3">Third heading</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+            appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+            some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h4 id="scrollspyHeading4">Fourth heading</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+            appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+            some more example copy here to emphasize the scrolling and highlighting.</p>
+          <h4 id="scrollspyHeading5">Fifth heading</h4>
+          <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+            appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding
+            some more example copy here to emphasize the scrolling and highlighting.</p>
+        </div>
+      </div>
+      <div class="container mt-5 mb-4 border pt-3 pb-3">
+        <div class="row">
+          <div class="col-4">
+            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link" href="#item-1">Item 1</a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                  <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                </nav>
+                <a class="nav-link" href="#item-2">Item 2</a>
+                <a class="nav-link" href="#item-3">Item 3</a>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                  <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                </nav>
+              </nav>
+            </nav>
+          </div>
+
+          <div class="col-8">
+            <div data-bs-spy="scroll" style="height: 350px;overflow-y: auto;" data-bs-target="#navbar-example3"
+              data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+              <div id="item-1">
+                <h4>Item 1</h4>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.</p>
+              </div>
+              <div id="item-1-1">
+                <h5>Item 1-1</h5>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.</p>
+              </div>
+              <div id="item-1-2">
+                <h5>Item 1-2</h5>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.</p>
+              </div>
+              <div id="item-2">
+                <h4>Item 2</h4>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.</p>
+              </div>
+              <div id="item-3">
+                <h4>Item 3</h4>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.</p>
+              </div>
+              <div id="item-3-1">
+                <h5>Item 3-1</h5>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.</p>
+              </div>
+              <div id="item-3-2">
+                <h5>Item 3-2</h5>
+                <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.This is some placeholder
+                  content for the scrollspy page. Note that as you scroll down the page, the
+                  appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                  adding
+                  some more example copy here to emphasize the scrolling and highlighting.</p>
+              </div>
             </div>
-
-            <!-- Modal body -->
-            <div class="modal-body">
-              Modal body..
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 mb-4 border pt-3 pb-3">
+        <div class="row">
+          <div class="col-4">
+            <div id="list-example" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
             </div>
-
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+          <div class="col-8">
+            <div data-bs-spy="scroll" style="height: 250px;overflow-y: auto;" data-bs-target="#list-example"
+              data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+              <h4 id="list-item-1">Item 1</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.This is some placeholder content
+                for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.</p>
+              <h4 id="list-item-2">Item 2</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.This is some placeholder content
+                for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.</p>
+              <h4 id="list-item-3">Item 3</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.This is some placeholder content
+                for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.</p>
+              <h4 id="list-item-4">Item 4</h4>
+              <p>This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.This is some placeholder content
+                for the scrollspy page. Note that as you scroll down the page, the
+                appropriate navigation link is highlighted. It's repeated throughout the component example. We keep
+                adding
+                some more example copy here to emphasize the scrolling and highlighting.</p>
             </div>
-
           </div>
         </div>
       </div>
@@ -885,6 +1145,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
       </script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+    <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+    </script>
   </body>
 
 </html>
