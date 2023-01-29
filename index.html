@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link
+      href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css"
       integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <!-- <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="./style.css" />
     <title>Frontend Bootcamp</title>
@@ -19,10 +25,17 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a href="#" class="navbar-brand">بوت کمپ</a>
+        <a href="#" class="navbar-brand" style="--bs-navbar-brand-margin-end: 0"
+          >بوت کمپ</a
+        >
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto text-end">
             <li class="nav-item">
@@ -36,44 +49,58 @@
             </li>
           </ul>
         </div>
-
       </div>
     </nav>
 
     <!-- Showcase -->
-    <section class="p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <section class="py-5 pt-lg-5 pb-lg-0 text-center text-sm-start">
       <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between">
+        <div class="d-sm-flex gap-4 align-items-center justify-content-between">
           <div class="text-end">
             <h1><span class="text-warning"> توسعه دهنده وب </span></h1>
             <p class="lead my-4 text-justify rtl">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است.
             </p>
-            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+            <a
+              class="btn btn-primary btn-lg d-block mx-auto d-sm-inline-block mb-4 mb-md-0"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
               شروع دوره
-            </button>
+            </a>
           </div>
-          <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="" />
+          <img
+            class="img-fluid w-50 user-image"
+            src="img/showcase.svg"
+            alt=""
+          />
         </div>
       </div>
     </section>
 
     <!-- Newsletter -->
-    <section class="bg-primary text-light p-5">
-      <div class="container">
+    <section class="bg-primary text-light py-5">
+      <div class="container-fluid container-sm">
         <div class="d-md-flex justify-content-between align-items-center">
           <div class="input-group news-input">
             <button class="btn btn-dark btn-lg" type="button">ثبت</button>
-            <input type="text" class="form-control text-end" placeholder="... آدرس پست الکترونیکی" />
+            <input
+              type="text"
+              class="form-control text-end"
+              placeholder="... آدرس پست الکترونیکی"
+            />
           </div>
-          <h3 class="mb-3 mb-md-0">عضو خبرنامه ما شوید</h3>
+          <h3 class="mb-3 mb-md-0 mt-4 mt-md-0 text-center text-md-end">
+            عضو خبرنامه ما شوید
+          </h3>
         </div>
       </div>
     </section>
 
     <!-- Boxes -->
-    <section class="p-5">
+    <section class="py-5">
       <div class="container">
         <div class="row text-center g-4">
           <div class="col-md">
@@ -84,10 +111,13 @@
                 </div>
                 <h3 class="card-title mb-3">متن نمونه</h3>
                 <p class="card-text text-justify">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                  متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است.
                 </p>
-                <a href="#" class="btn btn-primary">اطلاعات بیشتر</a>
+                <a href="#" class="btn btn-primary d-block d-md-inline-block"
+                  >اطلاعات بیشتر</a
+                >
               </div>
             </div>
           </div>
@@ -99,10 +129,13 @@
                 </div>
                 <h3 class="card-title mb-3">متن نمونه</h3>
                 <p class="card-text text-justify">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                  متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است.
                 </p>
-                <a href="#" class="btn btn-dark">اطلاعات بیشتر</a>
+                <a href="#" class="btn btn-dark d-block d-md-inline-block"
+                  >اطلاعات بیشتر</a
+                >
               </div>
             </div>
           </div>
@@ -114,10 +147,13 @@
                 </div>
                 <h3 class="card-title mb-3">متن نمونه</h3>
                 <p class="card-text text-justify">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                  متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است.
                 </p>
-                <a href="#" class="btn btn-primary">اطلاعات بیشتر</a>
+                <a href="#" class="btn btn-primary d-block d-md-inline-block"
+                  >اطلاعات بیشتر</a
+                >
               </div>
             </div>
           </div>
@@ -126,23 +162,25 @@
     </section>
 
     <!-- Learn Sections -->
-    <section id="learn" class="p-5">
+    <section id="learn" class="py-5">
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-md">
             <img src="img/fundamentals.svg" class="img-fluid" alt="" />
           </div>
-          <div class="col-md p-5 rtl">
+          <div class="col-md py-5 rtl">
             <h2>عنوان نمونه</h2>
             <p class="lead text-justify">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است.
             </p>
             <p class="text-justify">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است.
             </p>
-            <a href="#" class="btn btn-light mt-3">
+            <a href="#" class="btn btn-light mt-3 d-block d-md-inline-block">
               اطلاعات بیشتر <i class="bi bi-chevron-left"></i>
             </a>
           </div>
@@ -150,21 +188,24 @@
       </div>
     </section>
 
-    <section id="learn" class="p-5 bg-dark text-light">
+    <section id="learn" class="py-5 bg-dark text-light">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-md p-5 rtl">
+          <div class="col-md py-5 rtl">
             <h2>عنوان نمونه</h2>
             <p class="lead text-justify">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است.
             </p>
             <p class="text-justify">
-              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+              در ستون و سطرآنچنان که لازم است.
             </p>
-            <a href="#" class="btn btn-light mt-3">
-              اطلاعات بیشتر <i class="bi bi-chevron-left"></i>
+            <a href="#" class="btn btn-light mt-3 d-block d-md-inline-block">
+              اطلاعات بیشتر
+              <i class="bi bi-chevron-left"></i>
             </a>
           </div>
           <div class="col-md">
@@ -175,87 +216,132 @@
     </section>
 
     <!-- Question Accordion -->
-    <section id="questions" class="p-5">
+    <section id="questions" class="py-5">
       <div class="container">
         <h2 class="text-center mb-4">سؤالات متداول</h2>
         <div class="accordion accordion-flush rtl" id="questions">
           <!-- Item 1 -->
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#question-one">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
                 متن یک سؤال نمونه؟
               </button>
             </h2>
-            <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
-              <div class="accordion-body">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
-                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body text-justify">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
               </div>
             </div>
           </div>
           <!-- Item 2 -->
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#question-two">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
                 متن یک سؤال نمونه؟
               </button>
             </h2>
-            <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
-              <div class="accordion-body">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
-                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body text-justify">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
               </div>
             </div>
           </div>
           <!-- Item 3 -->
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#question-three">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
                 متن یک سؤال نمونه؟
               </button>
             </h2>
-            <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
-              <div class="accordion-body">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
-                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body text-justify">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
               </div>
             </div>
           </div>
           <!-- Item 4 -->
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#question-four">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
                 متن یک سؤال نمونه؟
               </button>
             </h2>
-            <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
-              <div class="accordion-body">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
-                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body text-justify">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
               </div>
             </div>
           </div>
           <!-- Item 5 -->
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#question-five">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
                 متن یک سؤال نمونه؟
               </button>
             </h2>
-            <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
-              <div class="accordion-body">
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
-                کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body text-justify">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله
+                در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد
+                نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
               </div>
             </div>
           </div>
@@ -263,20 +349,26 @@
       </div>
     </section>
 
-    <section id="instructors" class="p-5 bg-primary">
+    <section id="instructors" class="py-5 bg-primary">
       <div class="container">
         <h2 class="text-center text-white">آموزگاران ما</h2>
         <p class="lead text-center text-white mb-5">
-          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+          از طراحان گرافیک است.
         </p>
         <div class="row g-4">
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt="" />
+                <img
+                  src="https://randomuser.me/api/portraits/men/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
                 <h3 class="card-title mb-3">احسان امیری</h3>
                 <p class="card-text rtl text-justify">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است.
                 </p>
                 <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                 <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -289,10 +381,15 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt="" />
+                <img
+                  src="https://randomuser.me/api/portraits/women/11.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
                 <h3 class="card-title mb-3">پروانه رضایی</h3>
                 <p class="card-text rtl text-justify">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است.
                 </p>
                 <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                 <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -305,10 +402,15 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3" alt="" />
+                <img
+                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
                 <h3 class="card-title mb-3">احسان امیری</h3>
                 <p class="card-text rtl text-justify">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است.
                 </p>
                 <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                 <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -321,10 +423,15 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt="" />
+                <img
+                  src="https://randomuser.me/api/portraits/women/12.jpg"
+                  class="rounded-circle mb-3"
+                  alt=""
+                />
                 <h3 class="card-title mb-3">پروانه رضایی</h3>
                 <p class="card-text rtl text-justify">
-                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است.
                 </p>
                 <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
                 <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
@@ -338,7 +445,7 @@
     </section>
 
     <!-- Contact & Map -->
-    <section class="p-5">
+    <section class="py-5">
       <div class="container">
         <div class="row g-4">
           <div class="col-md">
@@ -349,13 +456,17 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe> -->
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1617.6625088196022!2d50.9994148!3d35.8165006!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfa!2s!4v1674331260634!5m2!1sfa!2s"
-                height="300" style="border:0;width: inherit" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                height="300"
+                style="border: 0; width: inherit"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
           <div class="col-md rtl">
             <h2 class="text-center mb-4">راه های ارتباطی</h2>
-            <ul class="list-group list-group-flush lead">
+            <ul class="list-group list-group-flush lead pe-0">
               <li class="list-group-item">
                 <span class="fw-bold">دفتر مرکزی: </span> تهران - تهران
               </li>
@@ -376,7 +487,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="p-5 bg-dark text-white text-center position-relative">
+    <footer class="py-5 bg-dark text-white text-center position-relative">
       <div class="container">
         <p class="lead">Copyright &copy; 2023 Frontend Bootcamp</p>
 
@@ -387,29 +498,44 @@
     </footer>
 
     <!-- Modal -->
-    <div class="modal fade rtl" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+    <div
+      class="modal fade rtl"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="enrollLabel">فرم ثبت درخواست</h5>
-            <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close m-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
-            <p class="lead">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+            <p class="lead">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+              استفاده از طراحان گرافیک است.
             </p>
             <form>
               <div class="mb-3">
-                <label for="first-name" class="col-form-label">
-                  نام:
-                </label>
+                <label for="first-name" class="col-form-label"> نام: </label>
                 <input type="text" class="form-control" id="first-name" />
               </div>
               <div class="mb-3">
-                <label for="last-name" class="col-form-label">نام خانوادگی:</label>
+                <label for="last-name" class="col-form-label"
+                  >نام خانوادگی:</label
+                >
                 <input type="text" class="form-control" id="last-name" />
               </div>
               <div class="mb-3">
-                <label for="email" class="col-form-label">پست الکترونیکی:</label>
+                <label for="email" class="col-form-label"
+                  >پست الکترونیکی:</label
+                >
                 <input type="email" class="form-control" id="email" />
               </div>
               <div class="mb-3">
@@ -419,7 +545,11 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
               لغو
             </button>
             <button type="button" class="btn btn-primary">ثبت</button>
@@ -428,9 +558,11 @@
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <!-- <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
 
     <script>
@@ -445,16 +577,14 @@
     </script> -->
 
     <script>
-      const navigation = document.querySelector(".navbar");
+      const navigation = document.querySelector('.navbar')
 
-      const navigationHeight = navigation.offsetHeight - 1;
+      const navigationHeight = navigation.offsetHeight - 1
 
       document.documentElement.style.setProperty(
-        "--scroll-padding",
-        navigationHeight + "px"
-      );
-
+        '--scroll-padding',
+        navigationHeight + 'px'
+      )
     </script>
   </body>
-
 </html>
