@@ -1,17 +1,19 @@
 @font-face {
-  font-family: 'Vazir';
-  src: url('./assets/fonts/vazir/Vazir.eot');
-  src: url('./assets/fonts/vazir/Vazir.eot?#iefix') format('embedded-opentype'),
-    url('./assets/fonts/vazir/Vazir.woff2') format('woff2'),
-    url('./assets/fonts/vazir/Vazir.woff') format('woff'),
-    url('./assets/fonts/vazir/Vazir.ttf') format('truetype');
+  font-family: 'iranyekan';
+  src: url('./assets/fonts/iranyekan/weight-400/iranyekanwebregularfanum.eot');
+  src: url('./assets/fonts/iranyekan/weight-400/iranyekanwebregularfanum.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/iranyekan/weight-400/iranyekanwebregularfanum.woff')
+      format('woff'),
+    url('./assets/fonts/iranyekan/weight-400/iranyekanwebregularfanum.ttf')
+      format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 * {
-  font-family: 'Vazir', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'iranyekan', BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 html {
@@ -38,7 +40,7 @@ body::before {
 }
 
 @media (max-width: 575px) {
-  .user-image{
+  .user-image {
     width: 100% !important;
   }
 }
